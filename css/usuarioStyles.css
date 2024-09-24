@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Bruno+Ace+SC&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    display: flex;
+}
+.sidebar{
+    position: sticky;/*Se usa para que quede fijo el navbar*/
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 75px;
+    height: 100vh;/*Ocupara el 100% de la pantalla a lo largo*/
+    padding: 0;/*1.7 a los lados*/
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: #FFFF;
+    overflow: hidden;/* cualquier contenido que exceda el tamaño del contenedor será ocultado y no será visible.*/
+    transition: all 0.5s linear;
+    background: #ceaeeb;
+}
+.sidebar:hover{
+    width: 240px;
+    transition: 0.5s;
+}
+.tamañoLogo{
+    width: 30px;
+    height: auto;
+}
+.logoli{
+    list-style-type: none;
+}
+.logoli--imgCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+.menu li{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu li:hover{
+    background: #6f7cebc9;
+}
+.menu a {
+    color: #FFFF;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.menu a span {
+    overflow: hidden;
+}
+.menu a i{
+    font-size: 1.2rem;
+}
+.logout{
+    position: absolute;
+    bottom: -51px;
+    left: 0;
+    width: 100%;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../assets/img/png/fondo.jpeg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+.contenido h1{
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #972c94;
+    animation: glitch 2s infinite;
+    font-family: "Belanosima", sans-serif;
+}
+@keyframes glitch {
+    0% {
+      text-shadow: #7255c4 0px 0px, #2152c0 0px 0px;
+    }
+  
+    50% {
+      text-shadow: #7a81d2 -8px 0px, #58bcfe 8px 0px;
+    }
+  
+    100% {
+      text-shadow: white 0px 0px, #BF50BE 0px 0px;
+    }
+  
+  }
